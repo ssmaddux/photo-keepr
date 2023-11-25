@@ -4,8 +4,6 @@
 ### Building blocks of Photo Keepr
 1. ### ERD 
 ![ERD ](./assets/photo_keepr.png)
-2. ### Component Hierarchy Diagram 
-![CHD ](./assets/comp_h.png)
-3. ### Wireframe
-![Wireframe ](./assets/layout.PNG)
+2. ### Component Hierarchy Diagram ![CHD ](./assets/comp_h.png)
+3. ### Wireframe ![Wireframe ](./assets/layout.PNG)
 [Linkedin Profile](www.linkedin.com/in/sagemaddux)

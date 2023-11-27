@@ -6,3 +6,6 @@
 2. ### Component Hierarchy Diagram ![CHD ](./assets/comp_h.png)
 3. ### Wireframe ![Wireframe ](./assets/layout.PNG)
 4. [Linkedin Profile](www.linkedin.com/in/sagemaddux)
+5. ### Frameworks
+[Djange](https://www.djangoproject.com/) will be used for the backend.
+6. [React](https://react.dev/) will be used for the front end. 

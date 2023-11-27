@@ -7,5 +7,5 @@
 3. ### Wireframe ![Wireframe ](./assets/layout.PNG)
 4. [Linkedin Profile](www.linkedin.com/in/sagemaddux)
 5. ### Frameworks
-6. [Djange](https://www.djangoproject.com/) will be used for the backend.
+6. [Django](https://www.djangoproject.com/) will be used for the backend.
 7. [React](https://react.dev/) will be used for the front end. 

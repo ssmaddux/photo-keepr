@@ -1,5 +1,5 @@
 from rest_framework import serializers
-from .models import User, Photo, People, Comment
+from .models import User, Photo, People
 
 class UserSerializer(serializers.HyperlinkedModelSerializer):
 
@@ -9,13 +9,7 @@ class UserSerializer(serializers.HyperlinkedModelSerializer):
        model = User
        fields = ('id', 'name', 'email', 'phone', 'password')
 
-class CommentSerializer(serializers.ModelSerializer):
- 
 
-
-    class Meta:
-       model = Comment
-       fields = ('id', 'related_picture', 'comment')
 
 
 
@@ -30,7 +24,7 @@ class PhotoSerializer(serializers.ModelSerializer):
 
     class Meta:
        model = Photo
-       fields = ('id', 'date', 'photo_name', 'preview_url', 'image','user')
+       fields = ('id', 'date', 'photo_name', 'preview_url', 'image','comment','user')
 
 
 

@@ -15,6 +15,7 @@ class Photo(models.Model):
     photo_name = models.CharField(max_length=100, default='no names associated')
     preview_url = models.CharField(max_length=200, null=True)
     image = models.ImageField(upload_to='photos/')
+    comment = models.TextField()
 
     def __str__(self):
         return self.photo_name
@@ -27,9 +28,3 @@ class People(models.Model):
     def __str__(self):
         return str(self.related_user.name)
     
-class Comment(models.Model):
-    related_picture = models.ForeignKey(Photo, on_delete=models.CASCADE, related_name='related_picture')
-    comment = models.CharField()
-
-    def __str__(self):
-        return self.comment

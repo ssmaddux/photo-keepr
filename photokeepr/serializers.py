@@ -24,7 +24,7 @@ class PhotoSerializer(serializers.ModelSerializer):
 
     class Meta:
        model = Photo
-       fields = ('id', 'date', 'photo_name', 'preview_url', 'image','likes','comment','user')
+       fields = ('id', 'date', 'photo_name', 'preview_url', 'image','comment','user')
 
 
 

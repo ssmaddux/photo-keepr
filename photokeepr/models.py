@@ -16,6 +16,7 @@ class Photo(models.Model):
     preview_url = models.CharField(max_length=200, null=True)
     image = models.ImageField(upload_to='photos/')
     comment = models.TextField()
+    likes = models.IntegerField
 
     def __str__(self):
         return self.photo_name

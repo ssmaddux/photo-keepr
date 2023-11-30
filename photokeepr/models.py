@@ -25,7 +25,16 @@ class People(models.Model):
     related_photo = models.ForeignKey(Photo, on_delete=models.CASCADE, related_name='related_photo')
     related_user = models.ForeignKey(User, on_delete=models.CASCADE, related_name='related_user', default=1)
     
+    
 
     def __str__(self):
         return str(self.related_user.name)
     
+
+class Comment(models.Model):
+    rel_photo = models.ForeignKey(Photo, on_delete=models.CASCADE, related_name='photo', null=True, blank=True)
+    rel_user = models.ForeignKey(User, on_delete=models.CASCADE, related_name='user', null=True, blank=True)
+    comment = models.TextField()
+
+    def __str__(self):
+        return self.comment

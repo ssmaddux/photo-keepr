@@ -10,6 +10,11 @@ urlpatterns = [
     path('photos/<int:pk>', views.PhotoDetail.as_view(), name='photo_detail'),
     path('peoples/', views.PeopleList.as_view(), name='people_list'),
     path('peoples/<int:pk>', views.PeopleDetail.as_view(), name='people_detail'),
-    path('photos/<int:photo_id>/comments/', views.PhotoDetail.as_view(), name='comment_create'),
+    # path('photos/<int:photo_id>/comments/', views.PhotoList.as_view(),
+    # name='comment_create'),
+    path('comments/', views.CommentList.as_view(), name='comment_list'),
+    path('comments/<int:pk>', views.CommentList.as_view(), name='comment_detail'),
+    path('comment/<int:pk>', views.CommentDetail.as_view(), name='comment_details'),
+
 
 ]

@@ -32,6 +32,7 @@ class PeopleDetail(generics.RetrieveUpdateDestroyAPIView):
 class CommentList(generics.ListCreateAPIView):
     queryset = Comment.objects.all()
     serializer_class = CommentSerializer
+    
 
 class CommentDetail(generics.RetrieveUpdateDestroyAPIView):
     queryset = Comment.objects.all()

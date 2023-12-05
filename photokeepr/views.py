@@ -1,8 +1,13 @@
 # views.py
 
-from rest_framework import generics
+from rest_framework import generics, parsers
 from .serializers import UserSerializer, PhotoSerializer, PeopleSerializer, CommentSerializer
 from .models import User, Photo, People, Comment
+
+class UploadPhoto(generics.CreateAPIView):
+    queryset = Photo.objects.all()
+    serializer_class = PhotoSerializer
+    parser_classes = (parsers.MultiPartParser, parsers.FormParser)
 
 class UserList(generics.ListCreateAPIView):
     queryset = User.objects.all()
